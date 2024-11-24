@@ -1,6 +1,10 @@
 # CS50x Projects Hub
 
-Welcome to my **CS50x Projects Hub**, where you'll find all the projects I’ve completed as part of [CS50's Introduction to Computer Science](https://cs50.harvard.edu/x/). This repository serves as a portfolio showcasing the work and concepts covered throughout the course.
+Welcome to my **CS50x Projects Hub**, a portfolio showcasing the projects I’ve completed as part of [CS50's Introduction to Computer Science](https://cs50.harvard.edu/x/). 
+
+To honor the course's academic integrity policy, all projects will be uploaded here after the course deadline of **January 1, 2025**.
+
+Stay tuned for updates as I share my journey through the exciting world of computer science!
 
 ## Table of Contents
 1. [About CS50x](#about-cs50x)
