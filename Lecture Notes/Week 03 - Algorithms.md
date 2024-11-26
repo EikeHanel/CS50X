@@ -96,7 +96,115 @@
   ```
 
 ## 4. Sorting
+- Os a balance between space usage and time spend
+  - low time spend -> high memory usage
+  - low memory usage -> high time spend
+
 ### 4.1 Selection Sort
 
 - Move through the list find the lowest number and swap it with the first (index[0])
 - start at index[1] and repeat
+- **Pseudocode**:
+  - For i from 0 to n-1
+    - Find smalles number between numbers[i] and numbers[n-1]
+    - Swap smallest number with numbers[i]
+- On the order of - $O(n^2)$ and $\Omega(n^2)$ and $\Theta(n^2)$
+
+### 4.2 Bubble Sort
+- Sorting by comparing numbers next to each other.
+- bringing the biggest number to the last spot
+- **Pseudocode**:
+  - For i form 0 n-2
+    - If numbers[i] and numbers[i+1] out of order
+      - Swap them
+    - If no swaps 
+      - Quit
+- On the order of - $O(n^2)$ and $\Omega(n)$ and $\Theta(n^2)$
+
+### 4.3 Recursion
+- A function that calls itself
+
+- **Example crating a pyramid**:
+  - Through double for loop **not recursively**
+    ```c
+    #include <cs50.h>
+    #include <stdio.h>
+
+    void draw(int n);
+    int main(void)
+    {
+        int height = get_int("Height: ");
+        draw(height);
+    }
+
+    void draw(int n)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < i + 1; j++)
+            {
+                printf("#");
+
+            }
+            printf("\n");
+        }
+    }
+    ```
+  - **Recursively**
+    ```c
+    #include <cs50.h>
+    #include <stdio.h>
+
+    void draw(int n);
+    int main(void)
+    {
+        int height = get_int("Height: ");
+        draw(height);
+    }
+
+
+    void draw(int n)
+    {
+        // If nothing to draw
+        if (n <= 0)
+        {
+            return;
+        }
+
+        // Print pyramid of height n-1
+        draw(n - 1);
+
+        // Print one more row
+        for (int i = 0; i < n; i++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+    ```
+### 4.4 Merge Sort
+- **Pseudocode**
+  - If only one number Quit
+    - Quit
+  - Else
+    - Sort left half of numbers
+    - Sort right half of numbers
+    - Merge sorted halves
+
+```
+                          6 | 3 | 4 | 1 | 5 | 2 | 7 | 0 
+
+            6 | 3 | 4 | 1                               5 | 2 | 7 | 0
+
+       6 | 3             4 | 1                    5 | 2               7 | 0
+
+      6     3          4       1                5       2           7       0
+
+       3 | 6             1 | 4                    2 | 5               0 | 7
+
+            1 | 3 | 4 | 6                               0 | 2 | 5 | 7
+
+                          0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+```
+
+- Time complexity is $O(nlogn)$ and $\Omega(nlogn)$ and $\Theta(nlogn)$
