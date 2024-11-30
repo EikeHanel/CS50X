@@ -1,6 +1,6 @@
-# CS50x Projects Hub
+# CS50x Course Hub
 
-Welcome to my **CS50x Projects Hub**, a portfolio showcasing the projects I’ve completed as part of [CS50's Introduction to Computer Science](https://cs50.harvard.edu/x/). 
+Welcome to my *CS50x Course Hub*, a collection of my lecture notes and the projects I’ve completed as part of the 2024 [CS50's Introduction to Computer Science](https://cs50.harvard.edu/x/). 
 
 To honor the course's academic integrity policy, all projects will be uploaded here after the course deadline of **January 1, 2025**.
 
@@ -57,6 +57,9 @@ CS50x is a comprehensive introduction to computer science, teaching problem-solv
 - Recreate earlier challenges in Python:
   - **Mario:** Build a text-based pyramid.
   - **Scrabble:** Calculate word scores.
+
+### Week 6.5: Artificial Intelligence
+-  Overview of the workings of AI
 
 ### Week 7: SQL and Databases
 - Query databases in:
